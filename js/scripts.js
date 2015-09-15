@@ -5,6 +5,7 @@ function Movie(movieTitle, movieTime, viewerAge, movieAge, ticketQuantity) {
   this.movieAge = movieAge;
   this.ticketQuantity = ticketQuantity;
 }
+
 $(function() {
   $("form#movies").submit(function(event) {
     event.preventDefault();

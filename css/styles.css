@@ -1,9 +1,18 @@
 h2 {
   text-align: center;
+  color: white;
+  text-shadow: 2px 2px #000;
 }
 ul li {
   list-style: none;
   text-align: center;
+}
+
+.show-movie-info {
+  max-width: 47%;
+  float: center;
+  padding: 20px 20px 0 0;
+  margin: auto;
 }
 
 ul li:hover {
@@ -12,5 +21,10 @@ ul li:hover {
 }
 
 .btn {
-  display: center;
+  text-align: center;
+}
+
+body {
+  background-image: url(../css/img/movie.jpg);
+  background-size: 100%;
 }
