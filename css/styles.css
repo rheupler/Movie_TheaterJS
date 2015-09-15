@@ -10,3 +10,7 @@ ul li:hover {
   text-decoration: underline;
   cursor: pointer;
 }
+
+.btn {
+  display: center;
+}

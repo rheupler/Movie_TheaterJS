@@ -10,27 +10,47 @@
   <body>
     <div class="container">
       <h2>Welcome to movie tickets</h2>
-      <form id="movies">
+        <form id="movies">
 
-        <div class="form-group">
-          <ul>
-            <input type='button' class="form-control movie" value="The Visit"><br>
-            <input type='button' class="form-control movie" value="Black Mass"><br>
-            <input type='button' class="form-control movie" value="Straight Outta Compton"><br>
-            <input type='button' class="form-control movie" value="Mission: Impossible-Rogue Nation"><br>
-            <input type='button' class="form-control movie" value="Everest"><br>
-            <input type='button' class="form-control movie" value="Inside Out"><br>
-            <input type='button' class="form-control movie" value="Trainwreck"><br>
-          </ul>
+          <select id="movieTitles" class="form-control">
+            <option value="The Visit">The Visit</option>
+            <option value="Black Mass">Black Mass</option>
+            <option value="Straight Outta Compton">Straight Outta Compton</option>
+            <option value="Mission: Impossible-Rogue Nation">Mission: Impossible-Rogue Nation</option>
+            <option value="Everest">Everest</option>
+            <option value="Inside Out">Inside Out</option>
+            <option value="Trainwreck">Trainwreck</option>
+          </select>
+        <div class="show-movie-info">
+          <ul id="movies">
+            <select id="movieTimes" class="form-control">
+              <option value="11:45 AM">11:45 AM</option>
+              <option value="2:15 PM">2:15 PM</option>
+              <option value="4:45 PM">4:45 PM</option>
+              <option value="6:15 PM">6:15 PM</option>
+              <option value="8:45 PM">8:45 PM</option>
+              <option value="10:05 PM">10:05 PM</option>
+            </select>
+            <select id="ticketType" class="form-control">
+              <option value="adult">Adult</option>
+              <option value="notAdult">Children</option>
+              <option value="notAdult">Senior</option>
+            </select>
+            <select id="ticketQuantity" class="form-control">
+              <option value="1">1 Ticket</option>
+              <option value="2">2 Tickets</option>
+              <option value="3">3 Tickets</option>
+              <option value="4">4 Tickets</option>
+            </select>
+            </ul>
+      <button class='btn btn-info'>Buy Ticket</button>
+      <button class='btn btn-warning'>Another Ticket</button>
+
+        </form>
         </div>
-      </form>
-      <div class="show-movie-info">
-        <ul id="movies">
-
-        </ul>
-      </div>
-
-
+        <div id="price">
+          <h2>Ticket Cost: <span id='display-price'></h2>
+        </div>
     </div>
   </body>
 </html>
